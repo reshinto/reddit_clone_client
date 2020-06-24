@@ -1,0 +1,63 @@
+.post-contents {
+  display: flex;
+  justify-content: space-around;
+  align-items: space-between;
+  margin: 2rem 0;
+  flex-wrap: wrap;
+}
+
+.post-main {
+  display: flex;
+  flex-direction: column;
+  height: 10rem;
+  justify-content: center;
+}
+
+.post-main h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.post-main p:last-child {
+  margin-top: 1rem;
+}
+
+.post-buttons {
+  margin: 1rem 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.post-edit {
+  width: 40%;
+  height: 3rem;
+  font-size: 2rem;
+  background-color: green;
+  color: #eeeeee;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.post-edit:hover {
+  opacity: 0.6;
+}
+
+.post-delete {
+  width: 40%;
+  height: 3rem;
+  font-size: 2rem;
+  background-color: red;
+  color: #eeeeee;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.post-delete:hover {
+  opacity: 0.6;
+}
+
+.post-comments {
+  margin: 1rem 3rem;
+}

@@ -1,0 +1,34 @@
+.login-container {
+  border: 1px solid red;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-container label {
+  display: flex;
+  flex-direction: column;
+  text-transform: uppercase;
+  width: 50%;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+}
+
+.login-container input {
+  width: 100%;
+  font-size: 2.5rem;
+  text-align: center;
+  height: 100px;
+  margin-top: 0.5rem;
+}
+
+.login-container button {
+  width: 50%;
+  height: 100px;
+  background-color: #4aa3df;
+  color: white;
+  font-size: 2.5rem;
+  border: none;
+}
