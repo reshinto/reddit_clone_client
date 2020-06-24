@@ -1,0 +1,49 @@
+.alert {
+  position: absolute;
+  padding: 20px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 1;
+  transition: opacity 0.6s;
+}
+
+.closebtn {
+  margin-left: 15px;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.alert-status-text {
+  text-transform: capitalize;
+}
+
+.danger {
+  background-color: #f44336;
+  color: white;
+}
+
+.danger-btn {
+  color: white;
+}
+
+.danger-btn:hover {
+  color: black;
+}
+
+.success {
+  background-color: #6bbd6e;
+  color: white;
+}
+
+.success-btn {
+  color: white;
+}
+
+.success-btn:hover {
+  color: black;
+}

@@ -1,0 +1,36 @@
+.header-container {
+  height: 20vh;
+  min-height: 100px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  position: relative;
+}
+
+.header-container h1 {
+  color: white;
+  font-size: 2rem;
+  position: absolute;
+  top: 40%;
+  left: 0;
+  right: 0;
+  text-align: center;
+  letter-spacing: 1em;
+  text-transform: uppercase;
+}
+
+.header-container p {
+  color: white;
+  font-size: 1rem;
+  position: absolute;
+  top: 70%;
+  left: 0;
+  right: 0;
+  text-align: center;
+  letter-spacing: 1em;
+  text-transform: uppercase;
+}
+
+.header-image {
+  max-width: 100vw;
+  content: url("https://blenderartists.org/uploads/default/original/4X/7/e/2/7e2d7bea4ac21388c4a96e1371f375c4ce00094b.jpg");
+}

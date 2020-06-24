@@ -1,0 +1,14 @@
+.score-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 2.5rem 2.5rem 2.5rem;
+}
+
+.score-container p {
+  margin: 0.5rem 0;
+  color: #a2a4a6;
+  font-weight: 800;
+  font-size: 1.1rem;
+}

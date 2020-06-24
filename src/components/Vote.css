@@ -1,0 +1,20 @@
+.vote-img {
+  width: 1.2rem;
+  cursor: pointer;
+}
+
+.img-up {
+  content: url("https://raw.githubusercontent.com/green-fox-academy/jsa-singapore-2020-syllabus/master/teaching-materials/reddit/assets/arrows/upvote.png?token=AILLHJIDID723MVNIESKUGK67N4GC");
+}
+
+.img-up:hover {
+  content: url("https://raw.githubusercontent.com/green-fox-academy/jsa-singapore-2020-syllabus/master/teaching-materials/reddit/assets/arrows/upvoted.png?token=AILLHJITNWZSOF4VMEECIM267N4IG");
+}
+
+.img-down {
+  content: url("https://raw.githubusercontent.com/green-fox-academy/jsa-singapore-2020-syllabus/master/teaching-materials/reddit/assets/arrows/downvote.png?token=AILLHJMUFAZ2GOBFLTJD32267N33Q");
+}
+
+.img-down:hover {
+  content: url("https://raw.githubusercontent.com/green-fox-academy/jsa-singapore-2020-syllabus/master/teaching-materials/reddit/assets/arrows/downvoted.png?token=AILLHJMH2JYGKELJFB2STVC67N4EG");
+}
