@@ -1,0 +1,14 @@
+aside button {
+  width: 100%;
+  background-color: #4aa3df;
+  color: #eeeeee;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  padding: 0.5rem 0;
+  border: none;
+  cursor: pointer;
+}
+
+aside button:hover {
+  background-color: #458ff0;
+}
