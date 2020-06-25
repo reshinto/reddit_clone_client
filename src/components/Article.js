@@ -64,7 +64,7 @@ export default (props) => {
             >
               {title}
             </span>
-            <a href={url} className="url-text">
+            <a href={url} className="url-text" target="_blank">
               ({url}){" "}
             </a>
           </p>

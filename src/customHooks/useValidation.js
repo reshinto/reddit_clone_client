@@ -18,8 +18,14 @@ export default ({ title, url }) => {
         hasNoError = false;
       }
       if (url !== "") {
-        if (!url.includes("www.")) {
-          urlError = "URL must start with www";
+        if (!url.includes("http")) {
+          urlError = "URL must start with http protocol";
+          hasNoError = false;
+        } else if (!url.includes("://")) {
+          urlError = "URL must contain :// after http or https";
+          hasNoError = false;
+        } else if (!url.includes("://www.")) {
+          urlError = "URL must have www. after ://";
           hasNoError = false;
         }
       }
