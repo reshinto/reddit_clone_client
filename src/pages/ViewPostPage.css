@@ -37,10 +37,11 @@
   border: none;
   cursor: pointer;
   text-transform: uppercase;
+  opacity: 0.6;
 }
 
 .post-edit:hover {
-  opacity: 0.6;
+  opacity: 1;
 }
 
 .post-delete {
@@ -52,10 +53,11 @@
   border: none;
   cursor: pointer;
   text-transform: uppercase;
+  opacity: 0.6;
 }
 
 .post-delete:hover {
-  opacity: 0.6;
+  opacity: 1;
 }
 
 .post-comments {

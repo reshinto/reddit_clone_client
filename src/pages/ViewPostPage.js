@@ -7,6 +7,7 @@ import Form from "../components/Form";
 import { getComments, addComment } from "../redux/actions/commentsActions";
 import Articles from "../components/Articles";
 import { setSubtitle } from "../redux/actions/headerActions";
+import DeleteModal from "../components/DeleteModal";
 import "./ViewPostPage.css";
 
 export default (props) => {
@@ -94,9 +95,17 @@ export default (props) => {
               </button>
             ) : null}
             {owner === user || owner === null ? (
-              <button className="post-delete" onClick={handleDelete}>
-                delete
-              </button>
+              <>
+                <button
+                  className="post-delete"
+                  onClick={() => {
+                    document.getElementById("id01").style.display = "block";
+                  }}
+                >
+                  delete
+                </button>
+                <DeleteModal type="Post" handleDelete={handleDelete} />
+              </>
             ) : null}
           </div>
           <Form

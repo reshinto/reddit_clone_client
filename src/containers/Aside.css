@@ -7,8 +7,9 @@ aside button {
   padding: 0.5rem 0;
   border: none;
   cursor: pointer;
+  opacity: 0.8;
 }
 
 aside button:hover {
-  background-color: #458ff0;
+  opacity: 1;
 }

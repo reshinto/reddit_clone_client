@@ -31,8 +31,9 @@
   background-color: #458ff0;
   color: white;
   border: none;
+  opacity: 0.6;
 }
 
 .form button:hover {
-  opacity: 0.6;
+  opacity: 1;
 }
