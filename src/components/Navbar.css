@@ -1,15 +1,24 @@
 .navbar-container {
   background-color: rgb(77, 75, 75);
-  height: 8vh;
+  min-width: 15rem;
+  height: 5vh;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  padding: 0 3rem;
+  padding: 0 1rem;
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  opacity: 0.5;
+}
+
+.navbar-container:hover {
+  opacity: 1;
 }
 
 .icon {
   color: #eef2f7;
-  font-size: 3rem;
+  font-size: 1.5rem;
   cursor: pointer;
 }
 
@@ -23,5 +32,5 @@
 
 .navbar-container h2 {
   color: #eef2f7;
-  font-size: 3rem;
+  font-size: 1rem;
 }
