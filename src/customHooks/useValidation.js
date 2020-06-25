@@ -17,9 +17,11 @@ export default ({ title, url }) => {
         titleError = "Title must not be empty";
         hasNoError = false;
       }
-      if (url === "") {
-        urlError = "URL must not be empty";
-        hasNoError = false;
+      if (url !== "") {
+        if (!url.includes("www.")) {
+          urlError = "URL must start with www";
+          hasNoError = false;
+        }
       }
       setError({
         titleError,

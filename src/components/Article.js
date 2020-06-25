@@ -64,7 +64,9 @@ export default (props) => {
             >
               {title}
             </span>
-            <span className="url-text">({url})</span>
+            <a href={url} className="url-text">
+              ({url}){" "}
+            </a>
           </p>
           <p className="owner">
             submitted {dateFormat} ago by <span>{owner || "anonymous"}</span>

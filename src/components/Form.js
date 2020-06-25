@@ -65,11 +65,7 @@ export default ({
             ? history.push(`/posts${path}`)
             : history.goBack();
         }}
-        disabled={
-          (input1Value === "" && !input2Value) || input2Value === ""
-            ? true
-            : false
-        }
+        disabled={input1Value === "" ? true : false}
       >
         submit
       </button>
