@@ -1,4 +1,4 @@
-import React, { useRef, useState, useEffect } from "react";
+import React, { useRef } from "react";
 import Articles from "./Articles";
 import "./CommentsModal.css";
 
@@ -8,6 +8,7 @@ export default ({ postId }) => {
     <>
       <div
         ref={commentModal}
+        // close when clicked anywhere (commented out to prevent so)
         // onClick={() => (modal.current.style.display = "none")}
         id="id02"
         className="comments-modal"
