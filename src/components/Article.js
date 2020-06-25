@@ -5,6 +5,8 @@ import { useHistory } from "react-router-dom";
 import Score from "./Score";
 import "./Article.css";
 import { getPost } from "../redux/actions/postsActions";
+import { getComments } from "../redux/actions/commentsActions";
+import CommentsModal from "./CommentsModal";
 
 // used for post and comment
 export default (props) => {
@@ -68,12 +70,21 @@ export default (props) => {
             submitted {dateFormat} ago by <span>{owner || "anonymous"}</span>
           </p>
           <p className="post-others">
-            <span className="post-others-comments">{`${commentsCount} comments`}</span>{" "}
+            <span
+              onClick={() => {
+                if (commentsCount > 0) {
+                  dispatch(getComments(id));
+                  document.getElementById("id02").style.display = "block";
+                }
+              }}
+              className="post-others-comments"
+            >{`${commentsCount} comments`}</span>{" "}
             <span className="post-others-spacing">
               <span>share</span> <span>save</span> <span>hide</span>{" "}
               <span>report</span> <span>crosspost</span> <span>pocket</span>
             </span>
           </p>
+          <CommentsModal postId={id} />
         </div>
       </>
     );

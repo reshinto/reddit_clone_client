@@ -1,0 +1,25 @@
+.comments-modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  /* overflow: auto;  */
+  background-color: rgba(0, 0, 0, 0.7);
+}
+/* Modal Content/Box */
+.comment-modal-content {
+  margin: 5% auto 15% auto;
+  width: 50%;
+  height: 80%;
+  overflow: auto;
+  background-color: white;
+}
+
+.comment-modal-title {
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 1rem;
+}
