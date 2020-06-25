@@ -65,7 +65,7 @@ export default (props) => {
               {title}
             </span>
             <a href={url} className="url-text" target="_blank">
-              ({url}){" "}
+              {url !== "" ? `(${url})` : null}
             </a>
           </p>
           <p className="owner">
